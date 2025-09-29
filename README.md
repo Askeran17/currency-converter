@@ -2,7 +2,7 @@
 
 A modern, responsive currency converter built with React and Vite. Get real-time exchange rates for 160+ currencies with an intuitive user interface.
 
-![Currency Converter](./public/demo.png)
+![Currency Converter](./public/demo)
 
 ## Demo
 
