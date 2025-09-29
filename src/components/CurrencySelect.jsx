@@ -38,6 +38,16 @@ const CurrencySelect = ({ selectedCurrency, handleCurrency }) => {
             'BRL': 'br',
             'KRW': 'kr',
             'MXN': 'mx',
+            // Regional currencies - use representative country
+            'XAF': 'cm', 
+            'XCD': 'ag', 
+            'XOF': 'sn', 
+            'XPF': 'pf', 
+            'ANG': 'cw', 
+            // Other special cases
+            'TWD': 'tw', 
+            'HKD': 'hk', 
+            'MOP': 'mo', 
         };
         return currencyToCountry[currency] || currency.substring(0, 2).toLowerCase();
     };
@@ -50,8 +60,8 @@ const CurrencySelect = ({ selectedCurrency, handleCurrency }) => {
         src={`https://flagcdn.com/24x18/${countryCode}.png`} 
         alt={`${selectedCurrency} flag`}
         onError={(e) => {
-          // Fallback to a generic flag if the specific flag fails to load
-          e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyNCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjE4IiBmaWxsPSIjQ0NDIi8+CjwvU3ZnPg==';
+          // Fallback to a generic currency icon if flag fails to load
+          e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyNCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjE4IiByeD0iMiIgZmlsbD0iIzM0MzQzNCIvPgo8dGV4dCB4PSIxMiIgeT0iMTIiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSI4IiBmaWxsPSIjZmZmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj7wn5KwPC90ZXh0Pgo8L3N2Zz4=';
         }}
       />
       <select 
