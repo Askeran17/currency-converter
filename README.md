@@ -51,15 +51,6 @@ Try the live demo: [Currency Converter](https://askeran17.github.io/currency-con
    http://localhost:5173
    ```
 
-## Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint |
-
 ## Usage
 
 1. **Enter Amount**: Type the amount you want to convert
