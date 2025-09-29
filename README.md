@@ -2,11 +2,11 @@
 
 A modern, responsive currency converter built with React and Vite. Get real-time exchange rates for 160+ currencies with an intuitive user interface.
 
-![Currency Converter](./public/demo)
+![Currency Converter](./src/assets/home.png)
 
 ## Demo
 
-Try the live demo: [Currency Converter](https://askeran17.github.io/currency-converter/)
+Try the live demo: https://askeran17.github.io/currency-converter/
 
 ## Features
 

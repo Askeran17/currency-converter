@@ -12,7 +12,8 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url("/bg.png") #030728 no-repeat center;
+  background: url('./assets/bg.png') #030728 no-repeat center;
+  background-size: cover;
 }
 
 #root {
