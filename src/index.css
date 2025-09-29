@@ -158,5 +158,10 @@ body {
   .currency-converter {
     margin: 15px;
   }
+
+  .form-currency-group .currency-select {
+  padding: 0 1px;
+  ;
+}
   
 }
