@@ -154,3 +154,9 @@ body {
   background: rgba(255, 255, 255, 0.15);
 }
 
+@media screen and (max-width: 480px) {
+  .currency-converter {
+    margin: 15px;
+  }
+  
+}
